@@ -1,0 +1,6 @@
+function solution(my_string) {
+    let answer = [];
+    for(let i of my_string) if(!isNaN(i)) answer.push(parseInt(i));
+    answer.sort((a, b) => a-b);
+    return answer;
+}
