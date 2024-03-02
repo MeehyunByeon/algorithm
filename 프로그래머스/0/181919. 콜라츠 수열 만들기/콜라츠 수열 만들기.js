@@ -1,0 +1,8 @@
+function solution(n) {
+    let answer = [n];
+    while(answer[answer.length-1] != 1) {
+        if(answer[answer.length-1]%2==0) answer.push(answer[answer.length-1]/2)
+        else answer.push(3 * answer[answer.length-1] + 1);
+    }
+    return answer;
+}
