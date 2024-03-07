@@ -1,0 +1,7 @@
+function solution(a, b) {
+    let answer = 0;
+    let start = a > b ? b : a;
+    let end = a > b ? a : b;
+    for(let i = start; i <= end; i++) answer += i;
+    return answer;
+}
