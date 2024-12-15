@@ -1,6 +1,3 @@
 function solution(n) {
-    let answer = 0;
-    let arr = n.toString().split("")
-    for(let i of arr) answer += parseInt(i);
-    return answer;
+    return n.toString().split("").reduce((a, c) => a+parseInt(c),0);
 }
