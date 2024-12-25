@@ -9,9 +9,9 @@ let input = [];
 rl.on('line', function (line) {
     input = line.split(' ');
 }).on('close', function () {
+    let star = "*";
     for(let i = 1; i <= input[0]; i++) {
-        let temp = '';
-        for(let j = 1; j <= i; j++) temp += "*";
-        console.log(temp);
+        console.log(star);
+        star += "*";
     }
 });
