@@ -1,6 +1,7 @@
 function solution(numLog) {
     let answer = '';
-    for(let i = 0; i < numLog.length-1; i++) {
+    let len = numLog.length-1;
+    for(let i = 0; i < len; i++) {
         let result = numLog[i+1]-numLog[i];
         switch(result) {
             case 1:
